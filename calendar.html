@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://use.edgefonts.net/vast-shadow:n4:all.js"></script>
+    <script src="https://use.edgefonts.net/vast-shadow:n4:all;megrim.js"></script>
+    <script src="MainController.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css"> 
+</head>
+  <body>
+  	<div ng-controller="TodoListController as todoList">
+    	<ul class="nav nav-list nav-pills navigation-buttons">
+        	<li ng-click="todoList.page()" ng-class="navClass('home')"><a href='index.html'>Todo List</a></li>
+        	<li ng-click="todoList.page()" ng-class="navClass('calendar')"><a href='calendar.html'>Calendar</a></li>
+    		<li ng-click="todoList.page()" ng-class="navClass('login')" onclick="alert('This Feature Will be coming soon!');"><a href='#'> Login</a> </li>
+
+    	</ul>
+ <div class="title">
+    <iframe src="https://calendar.google.com/calendar/embed?title=Google%20Calendar&amp;height=600&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    </body>
+    </html>
